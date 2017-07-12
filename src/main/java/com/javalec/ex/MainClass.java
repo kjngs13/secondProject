@@ -20,8 +20,8 @@ public class MainClass {
 		scanner.close();
 		
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-		ctx.getEnvironment().setActiveProfiles(config);
-		ctx.load("applicationCTX_dev.xml", "applicationCTX_run.xml");
+		//ctx.getEnvironment().setActiveProfiles(config);
+		//ctx.load("applicationCTX_dev.xml", "applicationCTX_run.xml");
 		
 		
 		ServerInfo info = ctx.getBean("serverInfo", ServerInfo.class);
